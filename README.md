@@ -2,7 +2,7 @@
 
 CodeLink is a social networking platform for developers to meet and share their skills.
 
-Demonstration: <https://www.youtube.com/watch?v=taDAv3vO6ZY&feature=youtu.be>
+[Demonstration](https://www.youtube.com/watch?v=taDAv3vO6ZY&feature=youtu.be)
 
 ## User interface
 
@@ -122,7 +122,7 @@ npm run dev
 
 ## Contributors
 
-- [Pablo Flores Fernández]('https://github.com/flores5545/')
-- [Philippa Payne]('https://github.com/P-C-R-P/')
-- [Miriam Kraus]('https://github.com/miriamCodes/')
-- [Adam le Breuilly]('https://www.linkedin.com/in/adam-le-breuilly/')
+- [Pablo Flores Fernández](https://github.com/flores5545/)
+- [Philippa Payne](https://github.com/P-C-R-P/)
+- [Miriam Kraus](https://github.com/miriamCodes/)
+- [Adam le Breuilly](https://www.linkedin.com/in/adam-le-breuilly/)
