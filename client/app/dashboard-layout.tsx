@@ -9,7 +9,7 @@ export default function DashboardLayout({
 }: {
   children: React.ReactNode;
 }) {
-  const [loggedIn, setLoggedIn] = useState(true);
+  const [loggedIn, setLoggedIn] = useState(false);
   return (
     <div className={styles.dashboard}>
       <NavBar loggedIn={loggedIn} setLoggedIn={setLoggedIn} />

@@ -7,7 +7,7 @@ generator client {
 
 datasource db {
   provider = "postgresql"
-  url      = env("DATABASE_URL") 
+  url      = env("DATABASE_URL")
   // if no environment variables have been set up, use the following as url
   // postgresql://eihocntsivnxjrzcrhmboxtu%40psql-mock-database-cloud:dzrxdjskhebhwamggdfofiia@psql-mock-database-cloud.postgres.database.azure.com:5432/booking1692881432019jkvgowtqqnczlapz
 }
