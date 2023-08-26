@@ -2,7 +2,7 @@
 
 CodeLink is a social networking platform for developers to meet and share their skills.
 
-[Demonstration](https://www.youtube.com/watch?v=taDAv3vO6ZY&feature=youtu.be)
+[Video](https://www.youtube.com/watch?v=taDAv3vO6ZY&feature=youtu.be)
 
 ## User interface
 
