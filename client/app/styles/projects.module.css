@@ -1,0 +1,60 @@
+.collaboration-body {
+  display: flex;
+}
+
+/* PROJECT LIST */
+
+.project-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 75%;
+  padding: 15px;
+}
+
+.project-item {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin: 10px;
+  background-color: #f9f9f9;
+}
+
+/* PROJECT FIRST CHILD */
+
+.project-item:first-child {
+  font-size: 1.2em;
+  background-color: #e9e9e9;
+}
+
+/* PROJECT NOT FIRST CHILD */
+
+.project-item:not(:first-child) {
+  font-size: 1em;
+}
+
+/* FORM */
+
+.add-project-container {
+  width: 25%;
+  padding: 15px;
+  border-right: 1px solid #ccc;
+}
+
+.add-project-input {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0;
+  box-sizing: border-box;
+}
+
+.add-project-btn {
+  width: 100%;
+  padding: 1vh 0 1vh 0;
+  font-size: 20px;
+  font-weight: 500;
+  color: white;
+  border-style: none;
+  background: linear-gradient(0deg, rgba(209,95,68,1) 0%, rgba(238,108,77,1) 100%);
+  margin-top: 4vh;
+  border-radius: 3px;
+  cursor: pointer;
+}

@@ -28,8 +28,6 @@ async function postRepo (req: Request, res: Response) {
           description: el.description,
           updatedAt: el.updated_at,
           createdAt: el.created_at,
-          stars: el.stargazers_count,
-          watchers: el.watchers,
           language: el.language,
           profileId: 1
         }

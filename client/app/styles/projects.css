@@ -12,8 +12,9 @@
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
     Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   position: relative;
-  flex-direction: row-reverse;
-  align-items: flex-start;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 /* PROJECT LIST */
@@ -24,6 +25,7 @@
   padding: 15px;
   flex-grow: 1;
   margin-top: 35px;
+  width: 75%;
 }
 
 .project-content {
@@ -38,20 +40,21 @@
 
 .project-description {
   font-style: italic;
+  padding: 10px 0px;
 }
 
 /* PROJECT FIRST CHILD */
 
 .project-item:first-child {
   font-size: 1.2em;
-  border: 5px solid #3d5a80;
+  box-shadow: 1px 1px 10px #293241;
 }
 
 /* PROJECT NOT FIRST CHILD */
 
 .project-item:not(:first-child) {
-  font-size: 1em;
-  border: 5px solid #98c1d9;
+  font-size: 1.2em;
+  box-shadow: 1px 1px 10px #293241;
 }
 
 /* PROJECT ACTIONS */
@@ -97,6 +100,8 @@
 }
 
 .likes-count {
+  width: 20px;
+  text-align: center;
   font-size: 16px;
   border: 1px solid;
   border-radius: 50px;
@@ -164,7 +169,7 @@
   font-size: 16px;
   font-weight: 500;
   color: white;
-  border-style: solid;
+  border-style: none;
   border-color: rgba(209, 95, 68, 1);
   background: linear-gradient(
     0deg,
@@ -184,6 +189,7 @@
   font-weight: 500;
   background: white;
   border-style: solid;
+  border-width: 1px;
   border-color: rgba(209, 95, 68, 1);
   color: rgba(209, 95, 68, 1);
   margin-right: 15px;
@@ -217,13 +223,17 @@
 
 .add-project-button-container {
   z-index: 10;
+  width: 100%;
+  display: flex;
+  justify-content: end;
+  padding-right: 150px;
 }
 
 .top-right-button {
   font-size: 20px;
   font-weight: 500;
   color: white;
-  border-style: solid;
+  border-style: none;
   border-color: rgba(209, 95, 68, 1);
   background: linear-gradient(
     0deg,
@@ -234,15 +244,15 @@
   border-radius: 3px;
   cursor: pointer;
   width: 150px;
-  text-align: center;
+  margin-top: 50px;
 }
 
 .add-project-container {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-color: white;
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  margin: 250px auto;
+  background: linear-gradient(135deg, rgba(224,251,252,1) 0%, rgba(152,193,217,1) 100%);
   padding: 20px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
   z-index: 100;
@@ -259,6 +269,7 @@
 }
 
 .add-project-input {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   width: 100%;
   padding: 10px;
   margin: 5px 0;
@@ -268,7 +279,7 @@
 }
 
 .add-project-input::placeholder {
-  font-family: 'Your Desired Font', sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-size: 20px;
   font-weight: 500;
 }
@@ -279,14 +290,14 @@
   font-size: 20px;
   font-weight: 500;
   color: white;
-  border-style: solid;
+  border-style: none;
   border-color: rgba(209, 95, 68, 1);
   background: linear-gradient(
     0deg,
     rgba(209, 95, 68, 1) 0%,
     rgba(238, 108, 77, 1) 100%
   );
-  margin-top: 4vh;
+  margin-top: 2vh;
   border-radius: 3px;
   cursor: pointer;
 }
@@ -298,9 +309,18 @@
   font-weight: 500;
   background: white;
   border-style: solid;
+  border-width: 1px;
   border-color: rgba(209, 95, 68, 1);
   color: rgba(209, 95, 68, 1);
-  margin-top: 4vh;
+  margin-top: 2vh;
   border-radius: 3px;
   cursor: pointer;
+}
+
+.stack-list {
+  padding: 10px 20px;
+}
+
+.timeline {
+  padding-bottom: 10px;
 }

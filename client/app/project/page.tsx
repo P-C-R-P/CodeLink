@@ -54,7 +54,6 @@ export default function Projects() {
       authorId: 1,
       comments: [],
     };
-    // how does authorId look like? (based on your auth0?)
     const response = await fetch('http://localhost:3001/project', {
       method: 'POST',
       headers: {
@@ -124,7 +123,7 @@ export default function Projects() {
     const project = projects[projectIndex];
 
     const commentData: Comment = {
-      authorId: 2, // actual author ID
+      authorId: 1, // actual author ID
       text: commentInput,
     };
     try {
@@ -165,8 +164,7 @@ export default function Projects() {
             <button
               className="top-right-button"
               onClick={() => setShowAddProjectForm(!showAddProjectForm)}
-            >
-              {showAddProjectForm ? 'Close' : 'Add Project'}
+            >Add Project
             </button>
           </div>
           {showAddProjectForm && (
@@ -229,17 +227,17 @@ export default function Projects() {
                     }`}
                   >
                     <div className="project-content">
-                      <h2>Project: {project.title}</h2>
+                      <h2>{project.title}</h2>
                       <p className="project-description">
                         {project.description}
                       </p>
                       <p>Preferred Techstack:</p>
-                      <ul>
+                      <ul className="stack-list">
                         {project.stack.map((tech) => (
                           <li key={tech}>{tech}</li>
                         ))}
                       </ul>
-                      <p>Estimated Length: {project.timeline}</p>
+                      <p className="timeline">Estimated Length: {project.timeline}</p>
                     </div>
                     <div className="actions-container">
                       <div className="actions-and-comments">
@@ -293,7 +291,7 @@ export default function Projects() {
                               {project.comments.map((comment, index) => (
                                 <div key={index} className="comment">
                                   <div className="comment-author">
-                                    User{comment.authorId}
+                                    P-C-R-P
                                   </div>
                                   <div className="comment-text">
                                     {comment.text}

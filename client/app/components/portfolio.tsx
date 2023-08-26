@@ -67,19 +67,7 @@ export default function Portfolio({
       select: false,
     },
   ]);
-  const [selectedRepos, setSelectedRepos] = useState([
-    {
-      id: '',
-      name: '',
-      description: '',
-      updated_at: '',
-      created_at: '',
-      stargazers_count: '',
-      watchers: '',
-      language: '',
-      select: false,
-    },
-  ]);
+  const [selectedRepos, setSelectedRepos] = useState([]);
   const [portfolioForm, setPortfolioForm] = useState(false);
   const [portfolio, setPortfolio] = useState([
     {
@@ -272,7 +260,7 @@ export default function Portfolio({
           id="portfolio-div"
           onClick={(event) => handleDiv(event)}
         >
-          {portfolio.map((p) => (
+          {portfolio.splice(0).map((p) => (
             <div id="project-div" className={styles.project_div} key={p.id}>
               <div className={styles.title_div}>
                 <p className={styles.title} key={p.name}>

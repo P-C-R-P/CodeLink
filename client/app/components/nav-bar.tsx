@@ -10,10 +10,8 @@ interface Properties {
   setLoggedIn: (loggedIn: boolean) => void;
 }
 
-export default function NavBar({
-  loggedIn,
-  setLoggedIn,
-}: Properties) /*: React.JSX.Element*/ {
+export default function NavBar({loggedIn, setLoggedIn}: Properties) /*: React.JSX.Element*/ {
+
   const router = useRouter();
 
   // const router = useRouter();
@@ -21,10 +19,10 @@ export default function NavBar({
   function handleClick(useCase: string) {
     if (useCase === 'Log out') {
       setLoggedIn(false);
-      router.push('http://localhost:3001/logout')
+      router.push('http://localhost:3001/logout');
     }
     if (useCase === 'Log in') {
-      //setLoggedIn(true);
+      // setLoggedIn(true);
       router.push('http://localhost:3001/login');
     }
     if (useCase === 'Register') {

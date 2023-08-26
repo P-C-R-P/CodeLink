@@ -1,6 +1,6 @@
 'use client';
 
-import NavBar from "./components/nav-bar";
+import NavBar from './components/nav-bar';
 import { useState } from 'react';
 import styles from '@/app/styles/dashboard-layout.module.css';
 
@@ -8,8 +8,8 @@ export default function DashboardLayout({
   children,
 }: {
   children: React.ReactNode;
-  }) {
-  const [loggedIn, setLoggedIn] = useState(false);
+}) {
+  const [loggedIn, setLoggedIn] = useState(true);
   return (
     <div className={styles.dashboard}>
       <NavBar loggedIn={loggedIn} setLoggedIn={setLoggedIn} />
